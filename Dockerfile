@@ -6,7 +6,7 @@ MAINTAINER Stefano Mereghetti <docker@smereghetti.com>
 ## Install packages
 ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get update -qq
-RUN apt-get install -y php5-mysql nano ssh
+RUN apt-get install -y mailutils ssmtp php5-ssh2 php5-mysql nano ssh
 
 # Download NagiosQL
 RUN mkdir /download
