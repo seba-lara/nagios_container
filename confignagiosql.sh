@@ -16,7 +16,8 @@ chmod 664 /etc/nagios/nagios.cfg
 chmod 664 /etc/nagios/cgi.cfg
 chmod 664 /etc/nagios/resource.cfg
 
-chmod -R 6755 /etc/nagiosql
+chmod -R 777 /etc/nagiosql
+chmod -R 777 /etc/nagios
 chown -R www-data.nagios /etc/nagiosql
 
 chmod -R 644 /etc/nagiosql/*.cfg
